@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecommunication</title>
+  </head>
+  <body>
+    <h3>Millionaire's Enquiry Form</h3>
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name">
+      <br>
+      <br>
+      <label for="income">Your Income</label>
+      <input type="number" name="income">
+      <br>
+      <br>
+      <label for="phone">Your Phone Number</label>
+      <input type="tel" name="phone">
+      <br>
+      <br>
+      <label for="pan">Your National ID (in PDF)</label>
+      <input type="file" name="pan">
+      <br>
+      <br>
+      <label for="idtype">National ID Category</label>
+      <select name="idtype" id="idtype">
+        <option value="adhaar">Adhaar</option>
+        <option value="pan">PAN</option>
+        <option value="dl">Driving License</option>
+      </select>
+      <br>
+      <br>
+      <label for="msg">Your thoughts about Indian education system</label>
+      <br>
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
