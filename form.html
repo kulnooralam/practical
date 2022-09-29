@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecommunication</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <style>
+        form {
+            position: relative;
+            margin: 1em auto;
+            padding: 2rem;
+            width: 50%;
+            background: blanchedalmond;
+            border-radius: 8px;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.125);
+        }
+
+        input, select {
+            padding: 1rem;
+            border: 1px solid rgb(220, 220, 220);
+            outline: none;
+        }
+
+        form .row{
+            position: relative;
+            margin: .5rem auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        form .column{
+            position: relative;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Millionaire's Enquiry Form</h3>
+    <form action="#" method="POST">
+
+        <div class="row">
+            <label for="name">Your Name</label>
+            <input type="text" name="name">
+        </div>
+
+        <div class="row">
+            <label for="income">Your Income</label>
+            <input type="number" name="income">
+        </div>
+
+        <div class="row">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="row">
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" name="phone">
+        </div>
+
+        <div class="row">
+            <label for="pan">Your National ID (in PDF)</label>
+            <input type="file" name="pan">
+        </div>
+
+        <div class="row">
+            <label for="idtype">National ID Category</label>
+            <select name="idtype" id="idtype">
+                <option value="adhaar">Adhaar</option>
+                <option value="pan">PAN</option>
+                <option value="dl">Driving License</option>
+            </select>
+        </div>
+
+        <div class="column">
+            <p>Are you married?</p>
+            <div class="row" style="max-width: 61.5%; margin: 1rem 0; align-self: flex-end;">
+                <span>
+                    <input type="radio" name="married" value="Yes">
+                    <label for="married">Yes</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="married" value="No">
+                    <label for="married">No</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="column">
+            <p>Your favourite holiday destination:</p>
+            <div class="row">
+                <span>
+                    <input type="checkbox" name="holiday" value="goa">
+                    <label for="married">Goa</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="holiday" value="rishikesh">
+                    <label for="married">Rishikesh</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="holiday" value="jaipur">
+                    <label for="married">Jaipur</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="column">
+            <label for="msg">Your thoughts about Indian education system</label>
+            <br>
+            <textarea class="msg" name="msg" id="msg" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
